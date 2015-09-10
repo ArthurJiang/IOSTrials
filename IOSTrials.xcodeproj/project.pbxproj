@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EAE17D21BA089D4006A47B6 /* AnimationRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE17D11BA089D4006A47B6 /* AnimationRootViewController.swift */; };
+		8EAE17D61BA12317006A47B6 /* PushDownAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE17D51BA12317006A47B6 /* PushDownAnimationViewController.swift */; };
 		8EFD0B871B9C92FB009AD555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD0B861B9C92FB009AD555 /* AppDelegate.swift */; };
 		8EFD0B8E1B9C92FB009AD555 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD0B8D1B9C92FB009AD555 /* Images.xcassets */; };
 		8EFD0B911B9C92FB009AD555 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD0B8F1B9C92FB009AD555 /* LaunchScreen.xib */; };
 		8EFD0B9D1B9C92FC009AD555 /* IOSTrialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD0B9C1B9C92FC009AD555 /* IOSTrialsTests.swift */; };
 		8EFD0BAD1B9C94D6009AD555 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD0BAC1B9C94D6009AD555 /* Constants.swift */; };
-		8EFD0BAF1B9C9505009AD555 /* RootTrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD0BAE1B9C9505009AD555 /* RootTrialViewController.swift */; };
+		8EFD0BAF1B9C9505009AD555 /* TrialRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD0BAE1B9C9505009AD555 /* TrialRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8EAE17D11BA089D4006A47B6 /* AnimationRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationRootViewController.swift; path = Animation/AnimationRootViewController.swift; sourceTree = "<group>"; };
+		8EAE17D51BA12317006A47B6 /* PushDownAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PushDownAnimationViewController.swift; path = Animation/PushDownAnimationViewController.swift; sourceTree = "<group>"; };
 		8EFD0B811B9C92FB009AD555 /* IOSTrials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTrials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFD0B851B9C92FB009AD555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EFD0B861B9C92FB009AD555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +39,7 @@
 		8EFD0B9B1B9C92FC009AD555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EFD0B9C1B9C92FC009AD555 /* IOSTrialsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSTrialsTests.swift; sourceTree = "<group>"; };
 		8EFD0BAC1B9C94D6009AD555 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Util/Constants.swift; sourceTree = "<group>"; };
-		8EFD0BAE1B9C9505009AD555 /* RootTrialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootTrialViewController.swift; path = RootView/RootTrialViewController.swift; sourceTree = "<group>"; };
+		8EFD0BAE1B9C9505009AD555 /* TrialRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrialRootViewController.swift; path = RootView/TrialRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 		8EFD0BAA1B9C93D7009AD555 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				8EAE17D51BA12317006A47B6 /* PushDownAnimationViewController.swift */,
+				8EAE17D11BA089D4006A47B6 /* AnimationRootViewController.swift */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -139,7 +145,7 @@
 		8EFD0BAB1B9C9459009AD555 /* RootView */ = {
 			isa = PBXGroup;
 			children = (
-				8EFD0BAE1B9C9505009AD555 /* RootTrialViewController.swift */,
+				8EFD0BAE1B9C9505009AD555 /* TrialRootViewController.swift */,
 			);
 			name = RootView;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 		8EFD0B791B9C92FB009AD555 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = ArthurJiang;
 				TargetAttributes = {
@@ -243,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EFD0BAF1B9C9505009AD555 /* RootTrialViewController.swift in Sources */,
+				8EFD0BAF1B9C9505009AD555 /* TrialRootViewController.swift in Sources */,
+				8EAE17D21BA089D4006A47B6 /* AnimationRootViewController.swift in Sources */,
 				8EFD0B871B9C92FB009AD555 /* AppDelegate.swift in Sources */,
+				8EAE17D61BA12317006A47B6 /* PushDownAnimationViewController.swift in Sources */,
 				8EFD0BAD1B9C94D6009AD555 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
