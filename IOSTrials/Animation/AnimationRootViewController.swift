@@ -17,6 +17,7 @@ class AnimationRootViewController: UIViewController, UITableViewDataSource, UITa
                                                                 Constants.AnimationCategory.PushDown: 3]
     
     var pushDownView: PushDownAnimationViewController!
+    var pushUpView: PushUpAnimationViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,10 @@ class AnimationRootViewController: UIViewController, UITableViewDataSource, UITa
         case animationIndex[Constants.AnimationCategory.PushDown]!:
             pushDownView = PushDownAnimationViewController()
             self.navigationController?.pushViewController(pushDownView, animated: true)
+            break
+        case animationIndex[Constants.AnimationCategory.PushUp]!:
+            pushUpView = PushUpAnimationViewController()
+            self.navigationController?.pushViewController(pushUpView, animated: true)
             break
         default:
             break

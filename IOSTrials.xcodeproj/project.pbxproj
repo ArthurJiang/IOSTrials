@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		8EAE17D21BA089D4006A47B6 /* AnimationRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE17D11BA089D4006A47B6 /* AnimationRootViewController.swift */; };
 		8EAE17D61BA12317006A47B6 /* PushDownAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE17D51BA12317006A47B6 /* PushDownAnimationViewController.swift */; };
+		8EAE17D81BA12B1F006A47B6 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE17D71BA12B1F006A47B6 /* DeviceInfo.swift */; };
+		8EAE17DA1BA12C46006A47B6 /* ColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE17D91BA12C46006A47B6 /* ColorSpace.swift */; };
+		8EAE17DF1BA12E73006A47B6 /* PushDownAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE17DE1BA12E73006A47B6 /* PushDownAnimation.swift */; };
+		8EAE17E11BA13033006A47B6 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE17E01BA13033006A47B6 /* Metric.swift */; };
+		8EAE17E31BA16EC3006A47B6 /* PushUpAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE17E21BA16EC3006A47B6 /* PushUpAnimationViewController.swift */; };
 		8EFD0B871B9C92FB009AD555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFD0B861B9C92FB009AD555 /* AppDelegate.swift */; };
 		8EFD0B8E1B9C92FB009AD555 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD0B8D1B9C92FB009AD555 /* Images.xcassets */; };
 		8EFD0B911B9C92FB009AD555 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFD0B8F1B9C92FB009AD555 /* LaunchScreen.xib */; };
@@ -30,6 +35,11 @@
 /* Begin PBXFileReference section */
 		8EAE17D11BA089D4006A47B6 /* AnimationRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationRootViewController.swift; path = Animation/AnimationRootViewController.swift; sourceTree = "<group>"; };
 		8EAE17D51BA12317006A47B6 /* PushDownAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PushDownAnimationViewController.swift; path = Animation/PushDownAnimationViewController.swift; sourceTree = "<group>"; };
+		8EAE17D71BA12B1F006A47B6 /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		8EAE17D91BA12C46006A47B6 /* ColorSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSpace.swift; path = Util/ColorSpace.swift; sourceTree = "<group>"; };
+		8EAE17DE1BA12E73006A47B6 /* PushDownAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PushDownAnimation.swift; path = Animation/AnimationFunction/PushDownAnimation.swift; sourceTree = "<group>"; };
+		8EAE17E01BA13033006A47B6 /* Metric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Metric.swift; path = Util/Metric.swift; sourceTree = "<group>"; };
+		8EAE17E21BA16EC3006A47B6 /* PushUpAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PushUpAnimationViewController.swift; path = Animation/PushUpAnimationViewController.swift; sourceTree = "<group>"; };
 		8EFD0B811B9C92FB009AD555 /* IOSTrials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTrials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFD0B851B9C92FB009AD555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EFD0B861B9C92FB009AD555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EAE17DB1BA12DB7006A47B6 /* AnimationFunction */ = {
+			isa = PBXGroup;
+			children = (
+				8EAE17DE1BA12E73006A47B6 /* PushDownAnimation.swift */,
+			);
+			name = AnimationFunction;
+			sourceTree = "<group>";
+		};
 		8EFD0B781B9C92FB009AD555 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				8EFD0BAC1B9C94D6009AD555 /* Constants.swift */,
+				8EAE17D71BA12B1F006A47B6 /* DeviceInfo.swift */,
+				8EAE17D91BA12C46006A47B6 /* ColorSpace.swift */,
+				8EAE17E01BA13033006A47B6 /* Metric.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -136,7 +157,9 @@
 		8EFD0BAA1B9C93D7009AD555 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				8EAE17DB1BA12DB7006A47B6 /* AnimationFunction */,
 				8EAE17D51BA12317006A47B6 /* PushDownAnimationViewController.swift */,
+				8EAE17E21BA16EC3006A47B6 /* PushUpAnimationViewController.swift */,
 				8EAE17D11BA089D4006A47B6 /* AnimationRootViewController.swift */,
 			);
 			name = Animation;
@@ -250,9 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EAE17E31BA16EC3006A47B6 /* PushUpAnimationViewController.swift in Sources */,
+				8EAE17DA1BA12C46006A47B6 /* ColorSpace.swift in Sources */,
 				8EFD0BAF1B9C9505009AD555 /* TrialRootViewController.swift in Sources */,
+				8EAE17DF1BA12E73006A47B6 /* PushDownAnimation.swift in Sources */,
+				8EAE17D81BA12B1F006A47B6 /* DeviceInfo.swift in Sources */,
 				8EAE17D21BA089D4006A47B6 /* AnimationRootViewController.swift in Sources */,
 				8EFD0B871B9C92FB009AD555 /* AppDelegate.swift in Sources */,
+				8EAE17E11BA13033006A47B6 /* Metric.swift in Sources */,
 				8EAE17D61BA12317006A47B6 /* PushDownAnimationViewController.swift in Sources */,
 				8EFD0BAD1B9C94D6009AD555 /* Constants.swift in Sources */,
 			);
